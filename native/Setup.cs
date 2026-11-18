@@ -11,7 +11,7 @@ using Microsoft.Win32;
 [assembly:AssemblyTitle("Установка · Истории")]
 [assembly:AssemblyCompany("_ron1nz_")]
 [assembly:AssemblyProduct("Истории · _ron1nz_")]
-[assembly:AssemblyVersion("1.9.2.0")]
+[assembly:AssemblyVersion("1.9.3.0")]
 class InstallActionButton : Button {
  bool hover;
  public InstallActionButton(){FlatStyle=FlatStyle.Flat;UseVisualStyleBackColor=false;DoubleBuffered=true;MouseEnter+=(s,e)=>{hover=true;Invalidate();};MouseLeave+=(s,e)=>{hover=false;Invalidate();};EnabledChanged+=(s,e)=>Invalidate();}
@@ -35,7 +35,7 @@ class Setup : Form {
   DoubleBuffered=true;Text="Установка · Истории";ClientSize=new Size(880,650);FormBorderStyle=FormBorderStyle.FixedDialog;MaximizeBox=false;StartPosition=FormStartPosition.CenterScreen;BackColor=Color.FromArgb(24,32,29);ForeColor=Color.FromArgb(222,227,215);Font=new Font("Segoe UI",10);AutoScaleMode=AutoScaleMode.Dpi;
   using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("app.ico")){if(stream!=null)Icon=new Icon(stream);}
   using(var art=Assembly.GetExecutingAssembly().GetManifestResourceStream("cover.png")){if(art!=null)coverArt=new Bitmap(Image.FromStream(art));}
-  TextAt("УСТАНОВКА / 1.9.2",254,26,590,22,9,Color.FromArgb(184,149,124));
+  TextAt("УСТАНОВКА / 1.9.3",254,26,590,22,9,Color.FromArgb(184,149,124));
   TextAt("Ваша библиотека историй",250,53,600,44,23,ForeColor);
   TextAt("Долгая тьма · Том I · Первые три главы · 18+",254,101,590,25,10,Color.FromArgb(156,174,155));
   string eula;using(var reader=new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream("EULA.txt"))){eula=reader.ReadToEnd();}
@@ -67,11 +67,11 @@ class Setup : Form {
     }
    });
    InstallerAgreement.WriteReceipt(folder);
-   File.WriteAllText(Path.Combine(folder,"installation.marker"),"Ron1nzStories 1.9.2");
+   File.WriteAllText(Path.Combine(folder,"installation.marker"),"Ron1nzStories 1.9.3");
    string programs=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Programs),"Истории ron1nz");Directory.CreateDirectory(programs);Shortcut(Path.Combine(programs,"Истории.lnk"),Path.Combine(folder,"Ron1nzStories.exe"));Shortcut(Path.Combine(programs,"Удалить.lnk"),Path.Combine(folder,"Uninstall.exe"));
    if(makeDesktop)Shortcut(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory),"Истории ron1nz.lnk"),Path.Combine(folder,"Ron1nzStories.exe"));
    using(var key=Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Ron1nzStories")){
-    key.SetValue("DisplayName","Истории · _ron1nz_");key.SetValue("DisplayVersion","1.9.2");key.SetValue("Publisher","_ron1nz_");key.SetValue("InstallLocation",folder);key.SetValue("DisplayIcon",Path.Combine(folder,"Ron1nzStories.exe"));key.SetValue("UninstallString","\""+Path.Combine(folder,"Uninstall.exe")+"\"");key.SetValue("NoModify",1);key.SetValue("NoRepair",1);
+    key.SetValue("DisplayName","Истории · _ron1nz_");key.SetValue("DisplayVersion","1.9.3");key.SetValue("Publisher","_ron1nz_");key.SetValue("InstallLocation",folder);key.SetValue("DisplayIcon",Path.Combine(folder,"Ron1nzStories.exe"));key.SetValue("UninstallString","\""+Path.Combine(folder,"Uninstall.exe")+"\"");key.SetValue("NoModify",1);key.SetValue("NoRepair",1);
    }
    status.Text="Готово. Приложение установлено.\nПриятного чтения.";progress.Value=100;progress.Visible=false;finished=true;busy=false;install.Text="Открыть";install.Enabled=true;cancel.Enabled=true;ControlBox=true;
   }catch(Exception ex){progress.Visible=false;status.Text="Установка не завершена: "+ex.Message;busy=false;ControlBox=true;accept.Enabled=true;desktop.Enabled=true;cancel.Enabled=true;installHint.Visible=true;UpdateInstallState();}

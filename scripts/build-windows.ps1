@@ -22,6 +22,6 @@ New-Item -ItemType Directory -Force -Path "$buildDirectory/www" | Out-Null
 Copy-Item -Path "$projectRoot/dist/*" -Destination "$buildDirectory/www" -Recurse -Force
 $payload=Join-Path $projectRoot 'build/payload.zip'
 Compress-Archive -Path "$buildDirectory/*" -DestinationPath $payload -Force
-Compile (@('/nologo','/target:winexe','/platform:x64',"/out:$OutputDirectory/Ron1nzStories-Setup-1.9.2.exe","/win32icon:$projectRoot/native/app.ico","/resource:$payload,payload.zip","/resource:$projectRoot/EULA.txt,EULA.txt","/resource:$projectRoot/native/app.ico,app.ico","/resource:$projectRoot/dist/assets/original-art.png,cover.png",'/reference:System.IO.Compression.dll','/reference:System.IO.Compression.FileSystem.dll','/reference:Microsoft.CSharp.dll')+$references+@("$projectRoot/native/Setup.cs","$projectRoot/native/InstallerAgreement.cs"))
-Copy-Item -LiteralPath $payload -Destination "$OutputDirectory/Ron1nzStories-Windows-Portable-1.9.2.zip" -Force
+Compile (@('/nologo','/target:winexe','/platform:x64',"/out:$OutputDirectory/Ron1nzStories-Setup-1.9.3.exe","/win32icon:$projectRoot/native/app.ico","/resource:$payload,payload.zip","/resource:$projectRoot/EULA.txt,EULA.txt","/resource:$projectRoot/native/app.ico,app.ico","/resource:$projectRoot/dist/assets/original-art.png,cover.png",'/reference:System.IO.Compression.dll','/reference:System.IO.Compression.FileSystem.dll','/reference:Microsoft.CSharp.dll')+$references+@("$projectRoot/native/Setup.cs","$projectRoot/native/InstallerAgreement.cs"))
+Copy-Item -LiteralPath $payload -Destination "$OutputDirectory/Ron1nzStories-Windows-Portable-1.9.3.zip" -Force
 Write-Output "Windows build complete: $OutputDirectory"

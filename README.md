@@ -7,17 +7,17 @@
 
 **18+** · Мистика и психологический хоррор. В рассказе есть ненормативная лексика и сцены насилия. Звуковое оформление включает внезапные эффекты.
 
-## Скачать 1.9.2
+## Скачать 1.9.3
 
 | Платформа | Файл | Требования |
 | --- | --- | --- |
-| Windows | [Установщик EXE](https://github.com/ron1nz-code/ron1nz-stories/releases/download/v1.9.2/Ron1nzStories-Setup-1.9.2.exe) | Windows 10 или 11 x64, .NET Framework 4.8 и Microsoft Edge WebView2 Runtime |
-| Android | [Подписанный APK](https://github.com/ron1nz-code/ron1nz-stories/releases/download/v1.9.2/Ron1nzStories-Android-1.9.2.apk) | Android 8.0 или новее, актуальный Android System WebView |
-| Исходный код | [Архив ZIP](https://github.com/ron1nz-code/ron1nz-stories/releases/download/v1.9.2/Ron1nzStories-Source-1.9.2.zip) | Инструкции по сборке ниже |
+| Windows | [Установщик EXE](https://github.com/ron1nz-code/ron1nz-stories/releases/download/v1.9.3/Ron1nzStories-Setup-1.9.3.exe) | Windows 10 или 11 x64, .NET Framework 4.8 и Microsoft Edge WebView2 Runtime |
+| Android | [Подписанный APK](https://github.com/ron1nz-code/ron1nz-stories/releases/download/v1.9.3/Ron1nzStories-Android-1.9.3.apk) | Android 8.0 или новее, актуальный Android System WebView |
+| Исходный код | [Архив ZIP](https://github.com/ron1nz-code/ron1nz-stories/releases/download/v1.9.3/Ron1nzStories-Source-1.9.3.zip) | Инструкции по сборке ниже |
 
 В Windows пользовательское соглашение открывается в установщике. После установки приложение сразу открывает библиотеку. EXE не имеет цифровой подписи издателя.
 
-APK обновляет версии 1.3–1.9.1 ветки `com.ron1nz.stories.reader` с сохранением прогресса, закладок и настроек. На Android соглашение появляется, если принятие ещё не сохранено на устройстве.
+APK обновляет версии 1.3–1.9.2 ветки `com.ron1nz.stories.reader` с сохранением прогресса, закладок и настроек. На Android соглашение появляется, если принятие ещё не сохранено на устройстве.
 
 ## Чтение
 
@@ -44,4 +44,4 @@ APK обновляет версии 1.3–1.9.1 ветки `com.ron1nz.stories.r
 
 Рассказ и обложка — **_ron1nz_**. [Сайт автора](https://ron1nz.ru)
 
-[Изменения в 1.9.2](CHANGES-1.9.2.md) · [Пользовательское соглашение](EULA.txt) · [Авторы звуков и лицензии](dist/assets/Audio-LICENSES.txt)
+[Изменения в 1.9.3](CHANGES-1.9.3.md) · [Пользовательское соглашение](EULA.txt) · [Авторы звуков и лицензии](dist/assets/Audio-LICENSES.txt)

@@ -34,8 +34,8 @@ if(!(Test-Path -LiteralPath $passwordFile)){
 $env:RON1NZ_SIGN_PASSWORD=$password
 try{
  if(!(Test-Path -LiteralPath $keystore)){Run "$JavaHome/bin/keytool.exe" @('-genkeypair','-keystore',$keystore,'-storepass:env','RON1NZ_SIGN_PASSWORD','-keypass:env','RON1NZ_SIGN_PASSWORD','-alias','ron1nz-stories','-keyalg','RSA','-keysize','3072','-validity','10000','-dname','CN=_ron1nz_, O=Ron1nz Stories','-noprompt')}
- Run "$JavaHome/bin/java.exe" @('-jar',"$toolsDirectory/lib/apksigner.jar",'sign','--v4-signing-enabled','false','--ks',$keystore,'--ks-key-alias','ron1nz-stories','--ks-pass','env:RON1NZ_SIGN_PASSWORD','--key-pass','env:RON1NZ_SIGN_PASSWORD','--out',"$OutputDirectory/Ron1nzStories-Android-1.9.2.apk","$buildDirectory/aligned.apk")
- Run "$JavaHome/bin/java.exe" @('-jar',"$toolsDirectory/lib/apksigner.jar",'verify','--verbose','--print-certs',"$OutputDirectory/Ron1nzStories-Android-1.9.2.apk")
+ Run "$JavaHome/bin/java.exe" @('-jar',"$toolsDirectory/lib/apksigner.jar",'sign','--v4-signing-enabled','false','--ks',$keystore,'--ks-key-alias','ron1nz-stories','--ks-pass','env:RON1NZ_SIGN_PASSWORD','--key-pass','env:RON1NZ_SIGN_PASSWORD','--out',"$OutputDirectory/Ron1nzStories-Android-1.9.3.apk","$buildDirectory/aligned.apk")
+ Run "$JavaHome/bin/java.exe" @('-jar',"$toolsDirectory/lib/apksigner.jar",'verify','--verbose','--print-certs',"$OutputDirectory/Ron1nzStories-Android-1.9.3.apk")
 }finally{Remove-Item Env:RON1NZ_SIGN_PASSWORD -ErrorAction SilentlyContinue;$password=$null}
-Run "$toolsDirectory/aapt2.exe" @('dump','badging',"$OutputDirectory/Ron1nzStories-Android-1.9.2.apk")
+Run "$toolsDirectory/aapt2.exe" @('dump','badging',"$OutputDirectory/Ron1nzStories-Android-1.9.3.apk")
 Write-Output "Android build complete: $OutputDirectory"

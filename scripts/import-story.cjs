@@ -14,7 +14,7 @@ for(let c=1;c<=3;c++){
  text=text.replace(/<page\b[^>]*>[\s\S]*?<\/page>/g,'').replace(/<p color="gray">[\s\S]*?<\/p>/g,'').replace(/<p\s*\/>/g,'').replace(/<\/?p[^>]*>/g,'').trim();
  text=text.replace(/<br\s*\/>/g,'\n\n');
  const blocks=[];
- let scene=c===1?'prologue':c===2?'train':'idle';
+ let scene=c===1?'silence':c===2?'train':'idle';
  for(let raw of text.split(/\n\s*\n/)){
   raw=raw.trim();if(!raw)continue;
   if(raw.startsWith('<image')) {blocks.push({id:`c${c}-p${blocks.length}`,type:'image',src:'assets/station.png',alt:'Иллюстрация станции из авторской страницы в Notion',scene});continue;}
@@ -22,7 +22,7 @@ for(let c=1;c<=3;c++){
   // Only preserve trusted formatting, never links/scripts/remote resources.
   const html=raw.replace(/<(?!\/?(?:b|i)\b)[^>]*>/g,'');
   const t=plain(html); if(!t)continue;
-  if(c===1){if(t.startsWith('За четыре'))scene='city'; if(t.startsWith('Недолго думая'))scene='station'; if(t.startsWith('Наконец, добежав'))scene='train';}
+  if(c===1){if(t.startsWith('За четыре'))scene='city'; if(t.startsWith('Наконец, добежав'))scene='train';}
   if(c===2&&t.startsWith('Мои размышления прервал'))scene='idle';
   if(c===3){
    if(t.startsWith('У тамбура'))scene='platform';
@@ -33,7 +33,7 @@ for(let c=1;c<=3;c++){
    if(t.startsWith('На улице было на удивление'))scene='wind';
    if(t.startsWith('Зайдя в магазин'))scene='shelter';
    if(t.startsWith('Она выглядела абсолютно'))scene='wind';
-   if(t.startsWith('Воняло плесенью'))scene='shelter';
+   if(t.includes('и, зайдя, прикрыл дверь'))scene='silence';
    if(t.startsWith('В этот момент в дом ввалился'))scene='fire';
    if(t.startsWith('Я проснулся от стука'))scene='tension';
   }

@@ -12,7 +12,7 @@ using System.Reflection;
 [assembly:AssemblyCompany("_ron1nz_")]
 [assembly:AssemblyProduct("Истории · _ron1nz_")]
 [assembly:AssemblyCopyright("© 2026 _ron1nz_")]
-[assembly:AssemblyVersion("1.9.2.0")]
+[assembly:AssemblyVersion("1.9.3.0")]
 class Reader : Form {
  WebView2 web; bool full; Rectangle oldBounds; FormWindowState oldState; string profile; bool fromSetup;
  const string Origin="https://library.ron1nz.local";

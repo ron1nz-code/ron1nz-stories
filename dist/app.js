@@ -62,7 +62,7 @@ async function revealFragment(id){
 function restartChapter(){reveals[S.chapters[chapterIndex].id]=[];storage.set('ron1nz.reveals.v3',reveals);openChapter(chapterIndex,null,true);}
 
 let view='home',chapterIndex=0,activeIndex=-1,modal=null,lastFocus=null,modalPosition=null,saveTimer,scrollScheduled=false,restoreUntil=0,fullscreen=false;
-const sceneNames={city:'Ночной город',station:'Вокзал',idle:'Поезд на стоянке',platform:'Перрон',prologue:'Внутри дома',train:'Колёса по рельсам',wind:'Зимний воздух',shelter:'Приглушённый фон',still:'Далёкий зимний фон',fire:'Треск камина',tension:'Воздух за окном',silence:'Тишина'};
+const sceneNames={city:'Ночной город',idle:'Поезд на стоянке',platform:'Перрон',train:'Колёса по рельсам',wind:'Зимний воздух',shelter:'Приглушённый зимний фон',still:'Тихий снег',fire:'Треск камина',tension:'Приглушённый камин',silence:'Тишина'};
 const categoryNames={character:'Герои',danger:'Опасность',clue:'Детали и улики',thought:'Мысли и предчувствия'};
 const audio=new window.Atmosphere(message=>{toast(message);updateSoundUI();});
 if(window.READER_DEV){audio.onFailure=error=>console.warn('[reader] failure '+String(error));audio.onCueStarted=name=>console.info('[reader] cue '+name);audio.onSceneChanged=name=>console.info('[reader] scene '+name);}
@@ -210,7 +210,7 @@ async function showAgreement(required=false){
 }
 function showAbout(){
  openModal('about','Об этой библиотеке',`
- <div class="about-author"><div><h3>Истории · _ron1nz_</h3><p>Версия 1.9.2</p></div></div>
+ <div class="about-author"><div><h3>Истории · _ron1nz_</h3><p>Версия 1.9.3</p></div></div>
  <p class="modal-description">«Долгая тьма», том I. Первые три главы перенесены из Notion.</p>
  <div class="about-note">Всё работает на вашем устройстве. Без регистрации, рекламы и сбора данных.<br>Сохранения не синхронизируются между устройствами.</div>
  <details class="settings-section audio-credits">
