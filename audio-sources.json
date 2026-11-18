@@ -1,0 +1,109 @@
+[
+  {
+    "author": "allh",
+    "file": "assets/train.mp3",
+    "license": "CC0-1.0",
+    "start": 20,
+    "duration": 52,
+    "url": "https://freesound.org/people/allh/sounds/133099/",
+    "key": "train",
+    "download": "https://cdn.freesound.org/previews/133/133099_2404400-hq.mp3"
+  },
+  {
+    "author": "audible-edge",
+    "file": "assets/wind.mp3",
+    "license": "CC0-1.0",
+    "start": 30,
+    "duration": 56,
+    "url": "https://freesound.org/people/audible-edge/sounds/69512/",
+    "key": "wind",
+    "download": "https://cdn.freesound.org/previews/69/69512_995351-hq.mp3"
+  },
+  {
+    "author": "Davor",
+    "file": "assets/fire.mp3",
+    "license": "CC0-1.0",
+    "start": 8,
+    "duration": 50,
+    "url": "https://freesound.org/people/Davor/sounds/382616/",
+    "key": "fire",
+    "download": "https://cdn.freesound.org/previews/382/382616_7094269-hq.mp3"
+  },
+  {
+    "author": "oldhiccup",
+    "file": "assets/knock.mp3",
+    "license": "CC0-1.0",
+    "start": 0,
+    "duration": 1.3,
+    "url": "https://freesound.org/people/oldhiccup/sounds/567607/",
+    "key": "knock",
+    "download": "https://cdn.freesound.org/previews/567/567607_12435826-hq.mp3"
+  },
+  {
+    "author": "Wenpire",
+    "file": "assets/glass.mp3",
+    "license": "CC0-1.0",
+    "start": 0,
+    "duration": 2.7,
+    "url": "https://freesound.org/people/Wenpire/sounds/574812/",
+    "key": "glass",
+    "download": "https://cdn.freesound.org/previews/574/574812_10771194-hq.mp3"
+  },
+  {
+    "author": "AnthonyChan0",
+    "file": "assets/shot.mp3",
+    "license": "CC0-1.0",
+    "start": 0,
+    "duration": 3.242,
+    "url": "https://freesound.org/people/AnthonyChan0/sounds/159707/",
+    "key": "shot",
+    "download": "https://cdn.freesound.org/previews/159/159707_2886479-hq.mp3",
+    "title": "Mossberg 500A - 1 shot and echo alt",
+    "processing": "Original stereo field recording and natural echo retained; high-pass 45 Hz, modest low-frequency EQ, peak limiting and gentle tail fade"
+  },
+  {
+    "author": "evisneffo",
+    "file": "assets/impact.mp3",
+    "license": "CC0-1.0",
+    "start": 0,
+    "duration": 1.1,
+    "url": "https://freesound.org/people/evisneffo/sounds/66964/",
+    "key": "impact",
+    "download": "https://cdn.freesound.org/previews/66/66964_913121-hq.mp3"
+  },
+  {
+    "author": "audible-edge",
+    "file": "assets/winter-air.mp3",
+    "license": "CC0-1.0",
+    "start": 30,
+    "duration": 56,
+    "url": "https://freesound.org/people/audible-edge/sounds/69512/",
+    "key": "winter-air",
+    "download": "https://cdn.freesound.org/previews/69/69512_995351-hq.mp3",
+    "processing": "Derived from the bundled wind recording: high-pass 95 Hz, low-pass 850 Hz, gentle compression, slow loudness smoothing and peak limiting. Scene-specific low-pass filtering and quiet mix gain."
+  },
+  {
+    "author": "Cameron Johnson",
+    "file": "assets/city.mp3",
+    "key": "city",
+    "license": "CC0-1.0",
+    "url": "https://freesound.org/people/Cameron%20Johnson/sounds/72062/",
+    "download": "https://cdn.freesound.org/previews/72/72062_938268-hq.mp3",
+    "start": 30,
+    "duration": 50,
+    "processing": "High-pass, low-pass and gentle dynamics smoothing"
+  },
+  {
+    "author": "theplax",
+    "file": "assets/train-idle.mp3",
+    "key": "train-idle",
+    "license": "CC-BY-4.0",
+    "url": "https://freesound.org/people/theplax/sounds/613873/",
+    "download": "https://cdn.freesound.org/previews/613/613873_12172648-hq.mp3",
+    "start": 0,
+    "duration": 74.999,
+    "processing": "High-pass 80 Hz, low-pass 2600 Hz, gentle dynamics and peak limiting; runtime 3.5 s loop crossfade",
+    "title": "train at station interior.wav",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  }
+]

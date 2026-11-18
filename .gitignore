@@ -1,0 +1,8 @@
+build/
+release/
+node_modules/
+native/*.exe
+*.keystore
+*.dpapi
+*.apk
+*.idsig
