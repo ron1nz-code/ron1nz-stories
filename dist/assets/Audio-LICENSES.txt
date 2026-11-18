@@ -1,0 +1,18 @@
+Sound attribution and modifications
+
+train-idle.mp3
+Original: "train at station interior.wav" by theplax
+Source: https://freesound.org/people/theplax/sounds/613873/
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Changes: high-pass / low-pass filtering, gentle compression and peak limiting,
+MP3 encoding, runtime loop crossfade and scene-specific gain / filtering.
+No endorsement by the original author is implied.
+
+shot.mp3
+Original: "Mossberg 500A - 1 shot and echo alt" by AnthonyChan0
+Source: https://freesound.org/people/AnthonyChan0/sounds/159707/
+License: CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: high-pass filter, modest bass EQ, peak limiting, tail fade and MP3 encoding.
+
+Other sounds and source URLs: audio-sources.json and the app's About screen.
