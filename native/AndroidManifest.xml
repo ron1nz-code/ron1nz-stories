@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ron1nz.stories.reader" android:versionCode="12" android:versionName="1.9.2">
+ <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="35" />
+ <application android:label="Истории · 1.9.2" android:icon="@drawable/icon" android:theme="@android:style/Theme.Material.NoActionBar" android:allowBackup="false" android:usesCleartextTraffic="false" android:supportsRtl="true" android:hardwareAccelerated="true">
+  <activity android:name=".MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden|uiMode" android:windowSoftInputMode="adjustResize">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+  </activity>
+ </application>
+</manifest>
